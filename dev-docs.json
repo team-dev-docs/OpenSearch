@@ -1,0 +1,9 @@
+{
+"gitHubApp": {
+    "connectedOrg": "spriteai",
+    "approvalWorkflow": true,
+    "branches": ["*"],
+    "userDocsWorkflows": ["generateUserDocs"],
+    "issues": true
+  }
+}

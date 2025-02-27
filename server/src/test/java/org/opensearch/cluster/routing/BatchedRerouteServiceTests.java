@@ -248,4 +248,10 @@ public class BatchedRerouteServiceTests extends OpenSearchTestCase {
 
         assertTrue(countDownLatch.await(10, TimeUnit.SECONDS)); // i.e. it doesn't leak any listeners
     }
+
+    public void testNewFunctionality() {
+        final BatchedRerouteService batchedRerouteService = new BatchedRerouteService(clusterService, (s, r) -> s);
+        batchedRerouteService.newFunctionality();
+        // Add assertions or verifications for the new functionality here
+    }
 }

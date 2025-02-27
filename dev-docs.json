@@ -1,9 +1,8 @@
 {
 "gitHubApp": {
-    "connectedOrg": "spriteai",
-    "approvalWorkflow": true,
-    "branches": ["*"],
-    "userDocsWorkflows": ["generateUserDocs"],
-    "issues": true
+  "connectedOrg": "opensearchfun",
+  "approvalWorkflow": true,
+  "userDocsWorkflows": ["generateUserDocs"],
+  "issues": true
   }
 }

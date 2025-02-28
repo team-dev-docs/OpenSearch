@@ -1369,16 +1369,4 @@ public class OperationRoutingTests extends OpenSearchTestCase {
         clusterState.routingTable(routingTableBuilder.build());
         return clusterState.build();
     }
-
-    /**
-     * Test for the new functionality in the OperationRouting class.
-     */
-    public void testNewFunctionality() {
-        OperationRouting operationRouting = new OperationRouting(
-            Settings.EMPTY,
-            new ClusterSettings(Settings.EMPTY, ClusterSettings.BUILT_IN_CLUSTER_SETTINGS)
-        );
-        operationRouting.newFunctionality();
-        // Add assertions or verifications for the new functionality here
-    }
 }

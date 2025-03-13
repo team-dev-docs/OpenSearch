@@ -128,6 +128,22 @@ public class FeatureFlags {
         Property.NodeScope
     );
 
+    /**
+     * Gates the functionality of detailed search query logging.
+     * This feature enables logging of search queries with additional metadata for debugging
+     * and performance analysis.
+     */
+    public static final String SEARCH_QUERY_LOGGING = "opensearch.experimental.feature.search.query.logging.enabled";
+
+    /**
+     * Setting that controls the search query logging feature.
+     */
+    public static final Setting<Boolean> SEARCH_QUERY_LOGGING_SETTING = Setting.boolSetting(
+        SEARCH_QUERY_LOGGING,
+        false,
+        Property.NodeScope
+    );
+
     private static final List<Setting<Boolean>> ALL_FEATURE_FLAG_SETTINGS = List.of(
         REMOTE_STORE_MIGRATION_EXPERIMENTAL_SETTING,
         EXTENSIONS_SETTING,
@@ -138,7 +154,8 @@ public class FeatureFlags {
         STAR_TREE_INDEX_SETTING,
         APPLICATION_BASED_CONFIGURATION_TEMPLATES_SETTING,
         READER_WRITER_SPLIT_EXPERIMENTAL_SETTING,
-        TERM_VERSION_PRECOMMIT_ENABLE_SETTING
+        TERM_VERSION_PRECOMMIT_ENABLE_SETTING,
+        SEARCH_QUERY_LOGGING_SETTING
     );
 
     /**

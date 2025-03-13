@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+    id 'com.diffplug.spotless'
+}
+
+esplugin {
+    name 'search-history'
+    description 'Plugin to track and manage search query history'
+    classname 'org.opensearch.plugin.searchhistory.SearchHistoryPlugin'
+}
+
+dependencies {
+    compileOnly "org.opensearch:opensearch:${version}"
+    testImplementation "org.opensearch.test:framework:${version}"
+}

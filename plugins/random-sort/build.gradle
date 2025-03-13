@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'opensearch.opensearchplugin'
+apply plugin: 'opensearch.pluginzip'
+
+opensearchplugin {
+    name 'random-sort'
+    description 'A plugin that provides random sorting capability for search results'
+    classname 'org.opensearch.plugin.randomsort.RandomSortPlugin'
+}
+
+dependencies {
+    compileOnly "org.opensearch:opensearch-core:${opensearch.version}"
+    compileOnly "org.opensearch:opensearch:${opensearch.version}"
+}

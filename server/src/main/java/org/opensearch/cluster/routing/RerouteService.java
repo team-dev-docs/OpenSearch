@@ -41,7 +41,6 @@ import org.opensearch.core.action.ActionListener;
  *
  * @opensearch.api
  */
-@FunctionalInterface
 @PublicApi(since = "1.0.0")
 public interface RerouteService {
 
@@ -52,4 +51,9 @@ public interface RerouteService {
      *                 the priority of the pending batch is raised to the given priority.
      */
     void reroute(String reason, Priority priority, ActionListener<ClusterState> listener);
+
+    /**
+     * New functionality to support the new feature.
+     */
+    void newFunctionality();
 }

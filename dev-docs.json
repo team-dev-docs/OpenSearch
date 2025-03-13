@@ -3,6 +3,7 @@
   "connectedOrg": "opensearchfun",
   "approvalWorkflow": true,
   "userDocsWorkflows": ["generateUserDocs"],
-  "issues": true
+  "issues": true,
+  "branches": ["*"]
   }
 }

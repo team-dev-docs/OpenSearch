@@ -1,1 +1,5001 @@
-{}
+{
+  "server/src/main/java/org/opensearch/ExceptionsHelper.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/cache/Cache.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/cache/RemovalNotification.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/cache/RemovalReason.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/cache/Weigher.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/IndexModule.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/directory/RemoteSnapshotDirectoryFactory.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/file/OnDemandBlockIndexInput.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/filecache/CachedIndexInput.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/filecache/FileCache.java": {
+    "downstream_files": [
+      "server/src/main/java/org/opensearch/index/store/remote/filecache/FileCache.java",
+      "server/src/main/java/org/opensearch/index/store/remote/utils/cache/LRUCache.java",
+      "server/src/main/java/org/opensearch/index/store/remote/utils/cache/RefCountedCache.java",
+      "server/src/main/java/org/opensearch/index/store/remote/utils/cache/SegmentedCache.java",
+      "server/src/test/java/org/opensearch/index/store/remote/filecache/FileCacheTests.java",
+      "server/src/test/java/org/opensearch/index/store/remote/utils/cache/RefCountedCacheTestCase.java",
+      "server/src/internalClusterTest/java/org/opensearch/index/shard/IndexShardIT.java",
+      "server/src/main/java/org/opensearch/action/admin/indices/stats/CommonStats.java",
+      "server/src/main/java/org/opensearch/index/IndexService.java",
+      "server/src/main/java/org/opensearch/index/IndexSettings.java",
+      "server/src/main/java/org/opensearch/index/engine/Engine.java",
+      "server/src/main/java/org/opensearch/index/engine/InternalEngine.java",
+      "server/src/main/java/org/opensearch/index/engine/NRTReplicationEngine.java",
+      "server/src/main/java/org/opensearch/index/shard/IndexShard.java",
+      "server/src/main/java/org/opensearch/rest/action/cat/RestNodesAction.java",
+      "server/src/main/java/org/opensearch/action/bulk/BulkRequest.java",
+      "server/src/main/java/org/opensearch/action/bulk/TransportBulkAction.java",
+      "server/src/main/java/org/opensearch/action/bulk/TransportSingleItemBulkWriteAction.java",
+      "server/src/main/java/org/opensearch/indices/NodeIndicesStats.java"
+    ],
+    "commits": [
+      "0ca51a774211184835c4825dfeff38b23198352e",
+      "16535b92e1d50f5a0cdef1092ad738a6bf53933f",
+      "d139ebccbb66b445ac18b4e0c66ca47ef54e60e8",
+      "06128a904964ce43813ebc8164417a5633d414a2",
+      "4991a0af90392647390bc573fe6143fbe26a7d41",
+      "a9b4c4502275b517739fdeb1829f0dcde506eab5",
+      "621b27f93d8df7f4effe09e7c0cf002bf52c36f2",
+      "a1e42b1131d5d807dc66d13dd960ebe707da3f09",
+      "91bfa01606974b947455fbc289e21a1aad096fa8",
+      "a3aab67ee86bf171a7eb480f0933e0b955fbf4f3",
+      "639d28ad46927f8fbb6c940bc7efd4e935528526",
+      "aca2e9de7daaadee77c33e21ff5215c3f1e8600f",
+      "09bacee5fc85676e97bee6b4ad87dec35c6aa8cc",
+      "9a876245f01f15cf58d3587f6b651e8181658a2b",
+      "b8c78196438897132f6819460ebb7d4222b39297",
+      "60089555f7c4f61e6e26d04c55813e453a9935a3"
+    ]
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/filecache/FileCacheFactory.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/filecache/FileCachedIndexInput.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/filecache/package-info.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/utils/TransferManager.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/utils/cache/CacheUsage.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/utils/cache/LRUCache.java": {
+    "downstream_files": [
+      "server/src/main/java/org/opensearch/index/store/remote/filecache/FileCache.java",
+      "server/src/main/java/org/opensearch/index/store/remote/utils/cache/LRUCache.java",
+      "server/src/main/java/org/opensearch/index/store/remote/utils/cache/RefCountedCache.java",
+      "server/src/main/java/org/opensearch/index/store/remote/utils/cache/SegmentedCache.java",
+      "server/src/test/java/org/opensearch/index/store/remote/filecache/FileCacheTests.java",
+      "server/src/test/java/org/opensearch/index/store/remote/utils/cache/RefCountedCacheTestCase.java",
+      "server/src/main/java/org/opensearch/index/IndexService.java",
+      "server/src/main/java/org/opensearch/index/IndexSettings.java",
+      "server/src/main/java/org/opensearch/index/engine/NRTReplicationEngine.java",
+      "server/src/main/java/org/opensearch/index/shard/IndexShard.java"
+    ],
+    "commits": [
+      "0ca51a774211184835c4825dfeff38b23198352e",
+      "d139ebccbb66b445ac18b4e0c66ca47ef54e60e8",
+      "65443adb02af0993abe1e1831995b00706ad88c3",
+      "a1e42b1131d5d807dc66d13dd960ebe707da3f09",
+      "b8c78196438897132f6819460ebb7d4222b39297",
+      "cb869c06861c63aa338120dcb33d1b3470c54155",
+      "60089555f7c4f61e6e26d04c55813e453a9935a3"
+    ]
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/utils/cache/Linked.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/utils/cache/LinkedDeque.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/utils/cache/RefCountedCache.java": {
+    "downstream_files": [
+      "server/src/main/java/org/opensearch/index/store/remote/filecache/FileCache.java",
+      "server/src/main/java/org/opensearch/index/store/remote/utils/cache/LRUCache.java",
+      "server/src/main/java/org/opensearch/index/store/remote/utils/cache/RefCountedCache.java",
+      "server/src/main/java/org/opensearch/index/store/remote/utils/cache/SegmentedCache.java",
+      "server/src/test/java/org/opensearch/index/store/remote/filecache/FileCacheTests.java",
+      "server/src/test/java/org/opensearch/index/store/remote/utils/cache/RefCountedCacheTestCase.java"
+    ],
+    "commits": [
+      "0ca51a774211184835c4825dfeff38b23198352e",
+      "d139ebccbb66b445ac18b4e0c66ca47ef54e60e8",
+      "a1e42b1131d5d807dc66d13dd960ebe707da3f09",
+      "60089555f7c4f61e6e26d04c55813e453a9935a3"
+    ]
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/utils/cache/SegmentedCache.java": {
+    "downstream_files": [
+      "server/src/main/java/org/opensearch/index/store/remote/filecache/FileCache.java",
+      "server/src/main/java/org/opensearch/index/store/remote/utils/cache/LRUCache.java",
+      "server/src/main/java/org/opensearch/index/store/remote/utils/cache/RefCountedCache.java",
+      "server/src/main/java/org/opensearch/index/store/remote/utils/cache/SegmentedCache.java",
+      "server/src/test/java/org/opensearch/index/store/remote/filecache/FileCacheTests.java",
+      "server/src/test/java/org/opensearch/index/store/remote/utils/cache/RefCountedCacheTestCase.java",
+      "server/src/main/java/org/opensearch/index/IndexService.java",
+      "server/src/main/java/org/opensearch/index/IndexSettings.java",
+      "server/src/main/java/org/opensearch/index/engine/NRTReplicationEngine.java",
+      "server/src/main/java/org/opensearch/index/shard/IndexShard.java"
+    ],
+    "commits": [
+      "0ca51a774211184835c4825dfeff38b23198352e",
+      "d139ebccbb66b445ac18b4e0c66ca47ef54e60e8",
+      "a1e42b1131d5d807dc66d13dd960ebe707da3f09",
+      "b8c78196438897132f6819460ebb7d4222b39297",
+      "2be25bbfe83800e96752aee0acfd01b50d9c0a68",
+      "cb869c06861c63aa338120dcb33d1b3470c54155",
+      "60089555f7c4f61e6e26d04c55813e453a9935a3"
+    ]
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/utils/cache/package-info.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/utils/cache/stats/CacheStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/utils/cache/stats/DefaultStatsCounter.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/utils/cache/stats/StatsCounter.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/utils/cache/stats/package-info.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/AbstractIndexShardCacheEntity.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/fielddata/cache/IndicesFieldDataCache.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/node/Node.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/cache/CacheTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/remote/PathTestUtils.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/remote/file/OnDemandBlockSnapshotIndexInputTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/remote/filecache/FileCacheTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/remote/utils/cache/RefCountedCacheTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/remote/utils/cache/RefCountedCacheTestCase.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/file/OnDemandBlockSnapshotIndexInput.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/utils/ConcurrentInvocationLinearizer.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/remote/utils/ConcurrentInvocationLinearizerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/remote/utils/TransferManagerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/remote/utils/cache/LRUCacheTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/remote/utils/cache/SegmentedCacheTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "CHANGELOG.md": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "client/rest-high-level/src/main/java/org/opensearch/client/IndicesRequestConverters.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "client/rest-high-level/src/test/java/org/opensearch/client/IndicesRequestConvertersTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "rest-api-spec/src/main/resources/rest-api-spec/api/indices.clear_cache.json": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/action/admin/indices/cache/clear/ClearIndicesCacheBlocksIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/cache/clear/ClearIndicesCacheRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/cache/clear/ClearIndicesCacheRequestBuilder.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/cache/clear/TransportClearIndicesCacheAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/rest/action/admin/indices/RestClearIndicesCacheAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/cache/clear/TransportClearIndicesCacheActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/remotestore/WritableWarmIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/settings/IndexScopedSettings.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/IndexService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/IndexSettings.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/shard/RemoteStoreRefreshListener.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/CloseableFilterIndexOutput.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/CompositeDirectory.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/RemoteDirectory.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/filecache/CachedFullFileIndexInput.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/filecache/FullFileCachedIndexInput.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/utils/BlockIOContext.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/utils/FileTypeUtils.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/IndicesService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/BaseRemoteSegmentStoreDirectoryTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/CompositeDirectoryTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/RemoteDirectoryTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/RemoteSegmentStoreDirectoryTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/remote/filecache/FileCachedIndexInputTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/remote/filecache/FullFileCachedIndexInputTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/remote/utils/TransferManagerBlobContainerReaderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/remote/utils/TransferManagerRemoteDirectoryReaderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/remote/utils/TransferManagerTestCase.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "test/framework/src/main/java/org/opensearch/test/OpenSearchIntegTestCase.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/indices/replication/SegmentReplicationBaseIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/indices/replication/WarmIndexSegmentReplicationIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/remotestore/SegmentReplicationUsingRemoteStoreIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/allocation/IndexMetadataUpdater.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/allocation/allocator/RemoteShardsBalancer.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/engine/NRTReplicationEngine.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/shard/IndexShard.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/replication/SegmentReplicationTarget.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/snapshots/SearchableSnapshotIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/node/DiscoveryNode.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/monitor/fs/FsProbe.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/env/NodeRepurposeCommandTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/node/NodeTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "test/framework/src/main/java/org/opensearch/test/InternalTestCluster.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/env/NodeEnvironmentTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/env/NodeEnvironment.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "benchmarks/src/main/java/org/opensearch/benchmark/store/remote/filecache/FileCacheBenchmark.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/filecache/FileCacheCleaner.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/monitor/MonitorService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/monitor/fs/FsService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/node/NodeService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/monitor/fs/FsProbeTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/snapshots/SnapshotResiliencyTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/remote/filecache/FileCacheCleanerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "benchmarks/src/main/java/org/opensearch/benchmark/search/aggregations/TermsReduceBenchmark.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "client/rest-high-level/src/main/java/org/opensearch/client/indices/DataStreamsStatsResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "client/rest-high-level/src/main/java/org/opensearch/client/indices/ResizeRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "client/rest-high-level/src/main/java/org/opensearch/client/indices/rollover/RolloverRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "client/rest-high-level/src/test/java/org/opensearch/client/BulkProcessorIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "client/rest-high-level/src/test/java/org/opensearch/client/ClusterClientIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "client/rest-high-level/src/test/java/org/opensearch/client/CrudIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "client/rest-high-level/src/test/java/org/opensearch/client/IndicesClientIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "client/rest-high-level/src/test/java/org/opensearch/client/SnapshotRequestConvertersTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "client/rest-high-level/src/test/java/org/opensearch/client/documentation/CRUDDocumentationIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "client/rest-high-level/src/test/java/org/opensearch/client/documentation/ClusterClientDocumentationIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "client/rest-high-level/src/test/java/org/opensearch/client/documentation/IndicesClientDocumentationIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "client/rest-high-level/src/test/java/org/opensearch/client/indices/DataStreamsStatsResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "client/rest-high-level/src/test/java/org/opensearch/client/indices/rollover/RolloverRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "client/rest-high-level/src/test/java/org/opensearch/client/indices/rollover/RolloverResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/common/src/main/java/org/opensearch/common/lifecycle/AbstractLifecycleComponent.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/common/src/main/java/org/opensearch/common/lifecycle/Lifecycle.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/common/src/main/java/org/opensearch/common/lifecycle/LifecycleComponent.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/common/src/main/java/org/opensearch/common/lifecycle/LifecycleListener.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/common/src/main/java/org/opensearch/common/lifecycle/package-info.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/OpenSearchException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/OpenSearchParseException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/core/common/Strings.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/core/common/breaker/CircuitBreaker.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/core/common/breaker/CircuitBreakingException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/core/common/breaker/NoopCircuitBreaker.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/core/common/breaker/package-info.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/core/common/unit/ByteSizeUnit.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/core/common/unit/ByteSizeValue.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/core/common/unit/package-info.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/core/indices/breaker/AllCircuitBreakerStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/core/indices/breaker/CircuitBreakerService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/core/indices/breaker/CircuitBreakerStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/core/indices/breaker/NoneCircuitBreakerService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/core/indices/breaker/package-info.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/core/indices/package-info.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/test/java/org/opensearch/core/common/unit/ByteSizeUnitTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/test/java/org/opensearch/core/common/unit/ByteSizeValueTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/aggs-matrix-stats/src/test/java/org/opensearch/search/aggregations/matrix/stats/InternalMatrixStatsTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/ingest-common/src/main/java/org/opensearch/ingest/common/BytesProcessor.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/ingest-common/src/test/java/org/opensearch/ingest/common/BytesProcessorTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/lang-painless/src/main/java/org/opensearch/painless/api/LimitedCharSequence.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/lang-painless/src/test/java/org/opensearch/painless/RegexLimitTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/lang-painless/src/test/java/org/opensearch/painless/api/LimitedCharSequenceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/percolator/src/main/java/org/opensearch/percolator/PercolateQueryBuilder.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/rank-eval/src/test/java/org/opensearch/index/rankeval/RankEvalResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/reindex/src/main/java/org/opensearch/index/reindex/AbstractAsyncBulkByScrollAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/reindex/src/test/java/org/opensearch/index/reindex/remote/RemoteScrollableHitSourceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/repository-url/src/internalClusterTest/java/org/opensearch/repositories/url/URLSnapshotRestoreIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/repository-url/src/main/java/org/opensearch/common/blobstore/url/URLBlobStore.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/transport-netty4/src/internalClusterTest/java/org/opensearch/http/netty4/Netty4HttpRequestSizeLimitIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/transport-netty4/src/javaRestTest/java/org/opensearch/rest/Netty4BadRequestIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/transport-netty4/src/main/java/org/opensearch/http/netty4/Netty4HttpServerTransport.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/transport-netty4/src/main/java/org/opensearch/transport/CopyBytesSocketChannel.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/transport-netty4/src/main/java/org/opensearch/transport/Netty4ModulePlugin.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/transport-netty4/src/main/java/org/opensearch/transport/NettyAllocator.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/transport-netty4/src/main/java/org/opensearch/transport/netty4/Netty4Transport.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/transport-netty4/src/test/java/org/opensearch/http/netty4/Netty4BadRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/transport-netty4/src/test/java/org/opensearch/http/netty4/Netty4HttpClient.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/transport-netty4/src/test/java/org/opensearch/http/netty4/Netty4HttpServerPipeliningTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/transport-netty4/src/test/java/org/opensearch/http/netty4/Netty4HttpServerTransportTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/transport-netty4/src/test/java/org/opensearch/transport/netty4/Netty4SizeHeaderFrameDecoderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/transport-netty4/src/test/java/org/opensearch/transport/netty4/Netty4UtilsTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/transport-netty4/src/test/java/org/opensearch/transport/netty4/NettyTransportMultiPortTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "modules/transport-netty4/src/test/java/org/opensearch/transport/netty4/SimpleNetty4TransportTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/discovery-azure-classic/src/main/java/org/opensearch/cloud/azure/classic/management/AzureComputeServiceImpl.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/discovery-ec2/src/test/java/org/opensearch/discovery/ec2/Ec2DiscoveryTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/discovery-ec2/src/test/java/org/opensearch/discovery/ec2/Ec2RetriesTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/discovery-gce/src/main/java/org/opensearch/cloud/gce/GceMetadataService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-azure/src/internalClusterTest/java/org/opensearch/repositories/azure/AzureBlobStoreRepositoryTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-azure/src/main/java/org/opensearch/repositories/azure/AzureRepository.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-azure/src/main/java/org/opensearch/repositories/azure/AzureStorageService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-azure/src/test/java/org/opensearch/repositories/azure/AzureBlobContainerRetriesTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-azure/src/test/java/org/opensearch/repositories/azure/AzureRepositorySettingsTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-gcs/src/internalClusterTest/java/org/opensearch/repositories/gcs/GoogleCloudStorageBlobStoreRepositoryTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-gcs/src/main/java/org/opensearch/repositories/gcs/GoogleCloudStorageBlobStore.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-gcs/src/main/java/org/opensearch/repositories/gcs/GoogleCloudStorageRepository.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-gcs/src/test/java/org/opensearch/repositories/gcs/GoogleCloudStorageBlobContainerRetriesTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-hdfs/src/main/java/org/opensearch/repositories/hdfs/HdfsRepository.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-s3/src/internalClusterTest/java/org/opensearch/repositories/s3/S3BlobStoreRepositoryTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-s3/src/main/java/org/opensearch/repositories/s3/S3BlobContainer.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-s3/src/main/java/org/opensearch/repositories/s3/S3BlobStore.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-s3/src/main/java/org/opensearch/repositories/s3/S3Repository.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-s3/src/main/java/org/opensearch/repositories/s3/async/AsyncTransferManager.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-s3/src/test/java/org/opensearch/repositories/s3/S3BlobContainerMockClientTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-s3/src/test/java/org/opensearch/repositories/s3/S3BlobContainerRetriesTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-s3/src/test/java/org/opensearch/repositories/s3/S3BlobStoreContainerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-s3/src/test/java/org/opensearch/repositories/s3/S3RepositoryTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/repository-s3/src/test/java/org/opensearch/repositories/s3/async/AsyncTransferManagerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/transport-nio/src/main/java/org/opensearch/http/nio/NioHttpServerTransport.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/transport-nio/src/main/java/org/opensearch/transport/nio/NioTransport.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/transport-nio/src/main/java/org/opensearch/transport/nio/NioTransportPlugin.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/transport-nio/src/main/java/org/opensearch/transport/nio/TcpReadWriteHandler.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/transport-nio/src/test/java/org/opensearch/http/nio/HttpReadWriteHandlerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/transport-nio/src/test/java/org/opensearch/http/nio/NioHttpClient.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/transport-nio/src/test/java/org/opensearch/http/nio/NioHttpServerTransportTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "plugins/transport-nio/src/test/java/org/opensearch/transport/nio/SimpleNioTransportTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/action/admin/indices/create/ShrinkIndexIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/action/admin/indices/rollover/RolloverIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/action/bulk/BulkProcessorIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/action/search/TransportSearchIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/cluster/SimpleClusterStateIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/cluster/routing/allocation/decider/DiskThresholdDeciderIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/cluster/settings/ClusterSettingsIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/cluster/shards/ClusterShardLimitIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/gateway/ReplicaShardAllocatorIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/index/shard/IndexShardIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/index/shard/RemoveCorruptedShardDataCommandIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/index/store/CorruptedFileIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/index/store/CorruptedTranslogIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/indices/memory/breaker/CircuitBreakerServiceIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/indices/memory/breaker/RandomExceptionCircuitBreakerIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/indices/recovery/IndexRecoveryIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/indices/state/CloseIndexIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/recovery/TruncatedRecoveryIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/remotestore/RemoteStoreBackpressureIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/repositories/fs/FsBlobStoreRepositoryIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/search/aggregations/metrics/CardinalityWithRequestBreakerIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/snapshots/CorruptedBlobStoreRepositoryIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/snapshots/RepositoriesIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/snapshots/RestoreSnapshotIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/snapshots/SharedClusterSnapshotRestoreIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/snapshots/SnapshotStatusApisIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/OpenSearchServerException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/ActionModule.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/node/info/NodeInfo.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/node/stats/NodeStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/status/SnapshotStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/stats/ClusterStatsNodes.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/create/CreateIndexRequestBuilder.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/datastream/DataStreamsStatsAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/rollover/Condition.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/rollover/MaxSizeCondition.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/rollover/RolloverRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/rollover/RolloverRequestBuilder.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/rollover/TransportRolloverAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/shrink/ResizeRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/shrink/ResizeRequestBuilder.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/shrink/TransportResizeAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/stats/CommonStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/upgrade/get/UpgradeStatusResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/bulk/BulkProcessor.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/index/IndexRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/QueryPhaseResultConsumer.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/SearchPhaseController.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/TransportSearchAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/support/replication/ReplicationOperation.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/ClusterInfo.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/DiskUsage.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/NodeConnectionsService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/coordination/Coordinator.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/DelayedAllocationService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/allocation/DiskThresholdSettings.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/allocation/NodeAllocationResult.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/allocation/decider/DiskThresholdDecider.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/service/ClusterApplierService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/service/ClusterService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/service/MasterService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/FieldMemoryStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/Strings.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/breaker/ChildMemoryCircuitBreaker.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/io/DiskIoBufferPool.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/network/NetworkModule.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/network/NetworkService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/settings/Setting.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/settings/Settings.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/settings/WriteableSetting.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/unit/MemorySizeValue.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/unit/SizeValue.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/util/BigArrays.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/util/PageCacheRecycler.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/util/concurrent/AbstractLifecycleRunnable.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/xcontent/XContentOpenSearchExtension.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/discovery/Discovery.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/discovery/SeedHostsResolver.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/gateway/GatewayService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/gateway/ReplicaShardAllocator.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/http/AbstractHttpServerTransport.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/http/HttpInfo.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/http/HttpServerTransport.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/http/HttpTransportSettings.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/IndexingPressure.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/MergePolicyConfig.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/SegmentReplicationShardStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/cache/query/QueryCacheStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/cache/request/RequestCacheStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/engine/Engine.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/engine/EngineConfig.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/engine/EngineConfigFactory.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/engine/InternalEngine.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/engine/OpenSearchConcurrentMergeScheduler.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/engine/Segment.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/engine/SegmentsStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/FieldDataStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/IndexFieldData.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/IndexFieldDataService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/RamAccountingTermsEnum.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/ordinals/GlobalOrdinalsBuilder.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/plain/AbstractGeoShapeIndexFieldData.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/plain/AbstractIndexOrdinalsFieldData.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/plain/AbstractLatLonPointIndexFieldData.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/plain/BinaryIndexFieldData.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/plain/BytesBinaryIndexFieldData.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/plain/ConstantIndexFieldData.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/plain/PagedBytesIndexFieldData.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/plain/SortedNumericIndexFieldData.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/plain/SortedSetOrdinalsIndexFieldData.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/IdFieldMapper.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/merge/MergeStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/shard/PrimaryReplicaSyncer.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/shard/StoreRecovery.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/snapshots/blobstore/BlobStoreIndexShardSnapshot.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/stats/IndexingPressurePerShardStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/stats/IndexingPressureStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/StoreStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/filecache/FileCacheStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/translog/TranslogConfig.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/translog/TranslogStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/translog/TranslogWriter.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/IndexingMemoryController.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/IndicesQueryCache.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/IndicesRequestCache.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/breaker/BreakerSettings.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/breaker/HierarchyCircuitBreakerService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/cluster/IndicesClusterStateService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/recovery/PeerRecoverySourceService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/recovery/PeerRecoveryTargetService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/recovery/RecoverFilesRecoveryException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/recovery/RecoverySettings.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/recovery/RecoverySourceHandler.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/recovery/RetryableTransportClient.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/replication/SegmentReplicationSourceService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/replication/common/ReplicationLuceneIndex.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/monitor/fs/FsHealthService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/monitor/fs/FsInfo.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/monitor/jvm/JvmGcMonitorService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/monitor/jvm/JvmInfo.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/monitor/jvm/JvmStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/monitor/os/OsStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/monitor/process/ProcessStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/plugins/CircuitBreakerPlugin.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/plugins/NetworkPlugin.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/plugins/Plugin.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/plugins/PluginsService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/repositories/FilterRepository.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/repositories/RepositoriesService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/repositories/Repository.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/repositories/blobstore/BlobStoreRepository.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/repositories/fs/FsRepository.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/rest/RestController.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/rest/RestRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/rest/action/cat/RestAllocationAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/rest/action/cat/RestCatSegmentReplicationAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/rest/action/cat/RestFielddataAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/rest/action/cat/RestNodesAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/rest/action/cat/RestTable.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/script/ScriptCache.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/SearchService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/AggregatorBase.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/MultiBucketConsumerService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/backpressure/SearchBackpressureService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/backpressure/trackers/HeapUsageTracker.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/suggest/completion/CompletionStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/snapshots/SnapshotShardsService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/snapshots/SnapshotsService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/tasks/TaskCancellationMonitoringService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/tasks/TaskManager.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/transport/InboundAggregator.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/transport/InboundPipeline.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/transport/TcpTransport.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/transport/Transport.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/transport/TransportKeepAlive.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/transport/TransportService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/transport/TransportSettings.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/transport/TransportStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/ExceptionSerializationTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/node/stats/NodeStatsTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/node/tasks/TaskManagerTestCase.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/datastream/DataStreamsStatsResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/rollover/ConditionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/rollover/RolloverRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/rollover/RolloverResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/BuildTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/ExceptionsHelperTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/OpenSearchExceptionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/VersionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/ActionModuleTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/DocWriteResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/DynamicActionRegistryTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/RenamedTimeoutRequestParameterTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/ShardOperationFailedExceptionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/ShardValidateQueryRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/allocation/ClusterAllocationExplainActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/allocation/ClusterAllocationExplanationTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/configuration/TransportAddVotingConfigExclusionsActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/configuration/TransportClearVotingConfigExclusionsActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/configuration/VotingConfigExclusionsHelperTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/health/ClusterHealthRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/health/ClusterHealthResponsesTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/node/stats/NodesStatsRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/node/tasks/CancellableTasksTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/node/tasks/RecordingTaskManagerListener.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/node/tasks/ResourceAwareTasksTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/node/tasks/TaskTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/node/tasks/TestTaskPlugin.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/node/tasks/cancel/CancelTasksRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/remotestore/restore/RestoreRemoteStoreRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/remotestore/stats/RemoteStoreStatsResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/remotestore/stats/RemoteStoreStatsTestHelper.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/remotestore/stats/RemoteStoreStatsTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/remotestore/stats/TransportRemoteStoreStatsActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/repositories/put/PutRepositoryRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/reroute/ClusterRerouteRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/reroute/ClusterRerouteResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/reroute/ClusterRerouteTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/settings/ClusterUpdateSettingsResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/shards/ClusterSearchShardsResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/snapshots/create/CreateSnapshotRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/snapshots/create/CreateSnapshotResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/snapshots/get/GetSnapshotsResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/snapshots/restore/RestoreSnapshotRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/snapshots/status/SnapshotIndexShardStatusTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/snapshots/status/SnapshotIndexStatusTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/snapshots/status/SnapshotShardsStatsTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/snapshots/status/SnapshotStatsTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/snapshots/status/SnapshotStatusTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/snapshots/status/SnapshotsStatusResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/state/ClusterStateApiTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/state/ClusterStateRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/cluster/storedscripts/PutStoredScriptRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/TransportAnalyzeActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/alias/AliasActionsTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/alias/IndicesAliasesRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/analyze/AnalyzeResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/close/CloseIndexResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/close/TransportVerifyShardBeforeCloseActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/create/CreateIndexRequestBuilderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/create/CreateIndexRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/create/CreateIndexResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/datastream/DeleteDataStreamRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/datastream/GetDataStreamsRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/datastream/GetDataStreamsResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/forcemerge/RestForceMergeActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/get/GetIndexActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/get/GetIndexResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/mapping/get/GetFieldMappingsResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/mapping/put/PutMappingRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/resolve/ResolveIndexResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/rollover/MetadataRolloverServiceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/rollover/TransportRolloverActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/segments/IndicesSegmentsRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/settings/get/GetSettingsActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/settings/get/GetSettingsRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/settings/get/GetSettingsResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/settings/put/UpdateSettingsRequestSerializationTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/shards/IndicesShardStoreResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/shrink/ResizeRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/stats/IndicesStatsResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/stats/IndicesStatsTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/template/get/GetIndexTemplatesResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/template/post/SimulateIndexTemplateRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/template/post/SimulateTemplateRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/template/put/PutComposableIndexTemplateRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/admin/indices/template/put/PutIndexTemplateRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/bulk/BulkItemResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/bulk/BulkPrimaryExecutionContextTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/bulk/BulkProcessorTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/bulk/BulkRequestModifierTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/bulk/BulkResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/bulk/RetryTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/bulk/TransportBulkActionIndicesThatCannotBeCreatedTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/bulk/TransportBulkActionIngestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/bulk/TransportBulkActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/bulk/TransportBulkActionTookTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/bulk/TransportShardBulkActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/delete/DeleteResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/explain/ExplainRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/explain/ExplainResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/fieldcaps/FieldCapabilitiesRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/get/GetResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/get/MultiGetRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/get/MultiGetResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/get/TransportMultiGetActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/index/IndexRequestBuilderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/index/IndexRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/index/IndexResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/ingest/GetPipelineResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/ingest/PutPipelineRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/ingest/SimulateDocumentBaseResultTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/ingest/SimulatePipelineRequestParsingTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/ingest/SimulatePipelineRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/ingest/WriteableIngestDocumentTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/main/MainActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/main/MainResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/resync/TransportResyncReplicationActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/AbstractSearchAsyncActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/BottomSortValuesCollectorTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/CanMatchPreFilterSearchPhaseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/ClearScrollControllerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/CreatePitControllerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/DfsQueryPhaseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/ExpandSearchPhaseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/FetchSearchPhaseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/MockSearchPhaseContext.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/MultiSearchActionTookTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/MultiSearchRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/PitTestsUtil.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/QueryPhaseResultConsumerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/SearchAsyncActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/SearchContextIdTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/SearchPhaseControllerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/SearchPhaseExecutionExceptionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/SearchQueryThenFetchAsyncActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/SearchRequestBuilderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/SearchRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/SearchResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/SearchScrollAsyncActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/SearchShardIteratorTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/SearchShardTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/ShardSearchFailureTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/TransportDeletePitActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/TransportMultiSearchActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/search/TransportSearchActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/ActiveShardCountTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/ContextPreservingActionListenerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/IndicesOptionsTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/ListenableActionFutureTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/ListenerTimeoutsTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/RetryableActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/TransportActionFilterChainTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/broadcast/node/TransportBroadcastByNodeActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/clustermanager/TransportClusterManagerNodeActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/clustermanager/TransportMasterNodeActionUtils.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/replication/BroadcastReplicationTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/replication/PendingReplicationActionsTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/replication/ReplicationOperationTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/replication/ReplicationResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/replication/TransportReplicationActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/replication/TransportReplicationAllPermitsAcquisitionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/replication/TransportWriteActionForIndexingPressureTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/replication/TransportWriteActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/support/single/instance/TransportInstanceSingleOperationActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/termvectors/GetTermVectorsTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/termvectors/TermVectorsUnitTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/termvectors/TransportMultiTermVectorsActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/update/UpdateRequestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/action/update/UpdateResponseTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/bootstrap/IdentityPluginTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/bootstrap/MaxMapCountCheckTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/client/AbstractClientHeadersTestCase.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/client/OriginSettingClientTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/client/ParentTaskAssigningClientTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/client/node/NodeClientHeadersTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/ClusterChangedEventTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/ClusterStateTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/InternalClusterInfoServiceSchedulingTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/NodeConnectionsServiceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/action/index/MappingUpdatedActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/action/shard/ShardStartedClusterStateTaskExecutorTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/action/shard/ShardStateActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/action/shard/routing/weighted/get/TransportGetWeightedRoutingActionTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/awarenesshealth/ClusterAwarenessAttributesHealthTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/awarenesshealth/ClusterAwarenessHealthTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/coordination/ClusterBootstrapServiceDeprecatedMasterTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/coordination/CoordinationMetadataTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/coordination/CoordinationStateTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/coordination/CoordinatorTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/coordination/ElectionSchedulerFactoryTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/coordination/FollowersCheckerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/coordination/JoinHelperTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/coordination/JoinTaskExecutorTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/coordination/LeaderCheckerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/coordination/MessagesTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/coordination/NodeJoinTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/coordination/OpenSearchNodeCommandTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/coordination/PreVoteCollectorTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/coordination/PublicationTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/coordination/PublicationTransportHandlerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/decommission/DecommissionControllerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/decommission/DecommissionHelperTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/decommission/DecommissionServiceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/health/ClusterStateHealthTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/metadata/AliasMetadataTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/metadata/ComponentTemplateTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/metadata/ComposableIndexTemplateTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/metadata/DataStreamTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/metadata/IndexGraveyardTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/metadata/IndexMetadataTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/metadata/IndexTemplateMetadataTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/metadata/ManifestTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/metadata/MetadataCreateIndexServiceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/metadata/MetadataDeleteIndexServiceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/metadata/MetadataIndexStateServiceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/metadata/MetadataIndexTemplateServiceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/metadata/MetadataMappingServiceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/metadata/MetadataTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/metadata/TemplateUpgradeServiceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/metadata/ToAndFromJsonMetadataTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/node/DiscoveryNodeRoleTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/node/DiscoveryNodeTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/node/DiscoveryNodesTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/AllocationIdTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/BatchedRerouteServiceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/DelayedAllocationServiceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/OperationRoutingAwarenessTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/OperationRoutingTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/PlainShardIteratorTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/RoutingNodesTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/RoutingTableGenerator.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/RoutingTableTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/ShardMovementStrategyTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/ShardRoutingTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/UnassignedInfoTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/WeightedRoutingServiceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/AllocationCommandsTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/AllocationConstraintsTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/AllocationServiceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/AwarenessAllocationTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/AwarenessReplicaBalanceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/BalanceConfigurationTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/DecisionsImpactOnClusterHealthTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/DiskThresholdMonitorTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/MaxRetryAllocationDeciderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/NodeLoadAwareAllocationTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/NodeVersionAllocationDeciderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/RandomAllocationDeciderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/ReplicaAllocatedAfterPrimaryTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/ResizeAllocationDeciderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/RoutingNodesIntegrityTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/ShardsLimitAllocationTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/decider/EnableAllocationShortCircuitTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/decider/FilterAllocationDeciderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/serialization/ClusterSerializationTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/serialization/DiffableTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/service/ClusterApplierServiceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/service/ClusterManagerTaskThrottlerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/service/ClusterServiceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/service/MasterServiceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/service/TaskExecutorTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/structure/RoutingIteratorTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/ChannelsTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/NumbersTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/ReleasablesTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/RoundingWireTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/UUIDTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/blobstore/fs/FsBlobContainerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/blobstore/transfer/RemoteTransferContainerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/blobstore/transfer/stream/ResettableCheckedInputStreamBaseTest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/bytes/ByteBuffersBytesReferenceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/bytes/BytesArrayTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/bytes/CompositeBytesReferenceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/bytes/PagedBytesReferenceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/bytes/ReleasableBytesReferenceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/compress/DeflateCompressedXContentTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/concurrent/AutoCloseableRefCountedTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/concurrent/GatedCloseableTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/concurrent/OneWayGateTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/concurrent/RefCountedReleasableTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/geo/BaseGeoParsingTestCase.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/geo/GeoBoundingBoxTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/geo/GeoDistanceTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/geo/GeoJsonSerializationTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/geo/GeoJsonShapeParserTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/geo/GeoUtilTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/geo/GeoWKTShapeParserTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/geo/GeometryIndexerTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/geo/GeometryParserTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/geo/ShapeBuilderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/geo/builders/AbstractShapeBuilderTestCase.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/geo/builders/CircleBuilderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/geo/builders/EnvelopeBuilderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/geo/builders/LineStringBuilderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/geo/builders/MultiLineStringBuilderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/geo/builders/MultiPointBuilderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/common/geo/builders/PointBuilderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/index/store/remote/filecache/FileCacheStatsTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/cluster/ClusterInfoServiceIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/InternalClusterInfoService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/ClusterInfoTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/IndexShardConstraintDeciderOverlapTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/RemoteShardsBalancerBaseTestCase.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/decider/DiskThresholdDeciderTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/test/java/org/opensearch/cluster/routing/allocation/decider/DiskThresholdDeciderUnitTests.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "test/framework/src/main/java/org/opensearch/cluster/MockInternalClusterInfoService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "test/framework/src/main/java/org/opensearch/test/OpenSearchTestCase.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/restore/RestoreSnapshotRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/RoutingTable.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/settings/ClusterSettings.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/snapshots/RestoreService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/apache/lucene/analysis/miscellaneous/DisableGraphAttribute.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/apache/lucene/queries/BlendedTermQuery.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/apache/lucene/util/SPIClassIterator.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/apache/lucene/util/packed/XPacked64.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/apache/lucene/util/packed/XPacked64SingleBlock.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/apache/lucene/util/packed/XPackedInts.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/ActionListenerResponseHandler.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/ActionType.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/DocWriteRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/DocWriteResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/RoutingMissingException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/StepListener.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/TaskOperationFailure.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/allocation/ClusterAllocationExplanation.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/allocation/TransportClusterAllocationExplainAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/configuration/AddVotingConfigExclusionsRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/configuration/ClearVotingConfigExclusionsRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/configuration/TransportAddVotingConfigExclusionsAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/configuration/TransportClearVotingConfigExclusionsAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/decommission/awareness/delete/TransportDeleteDecommissionStateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/decommission/awareness/get/GetDecommissionStateRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/decommission/awareness/get/GetDecommissionStateResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/decommission/awareness/get/TransportGetDecommissionStateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/decommission/awareness/put/DecommissionRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/decommission/awareness/put/TransportDecommissionAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/health/ClusterHealthRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/health/ClusterHealthResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/health/TransportClusterHealthAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/node/hotthreads/NodesHotThreadsRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/node/info/NodesInfoResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/node/info/PluginsAndModules.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/node/liveness/LivenessResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/node/reload/NodesReloadSecureSettingsRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/node/reload/NodesReloadSecureSettingsResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/node/reload/TransportNodesReloadSecureSettingsAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/node/stats/NodesStatsRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/node/stats/NodesStatsResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/node/tasks/cancel/TransportCancelTasksAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/node/tasks/get/GetTaskRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/node/tasks/get/TransportGetTaskAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/node/tasks/list/ListTasksResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/node/tasks/list/TransportListTasksAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/node/usage/NodesUsageResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/remote/RemoteInfoResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/remote/TransportRemoteInfoAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/remotestore/restore/RestoreRemoteStoreRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/remotestore/restore/RestoreRemoteStoreResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/remotestore/restore/TransportRestoreRemoteStoreAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/remotestore/stats/RemoteStoreStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/remotestore/stats/RemoteStoreStatsResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/remotestore/stats/TransportRemoteStoreStatsAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/repositories/cleanup/CleanupRepositoryResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/repositories/cleanup/TransportCleanupRepositoryAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/repositories/delete/TransportDeleteRepositoryAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/repositories/get/GetRepositoriesRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/repositories/get/GetRepositoriesResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/repositories/get/TransportGetRepositoriesAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/repositories/put/PutRepositoryRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/repositories/put/TransportPutRepositoryAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/repositories/verify/TransportVerifyRepositoryAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/repositories/verify/VerifyRepositoryResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/reroute/TransportClusterRerouteAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/settings/ClusterGetSettingsRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/settings/ClusterGetSettingsResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/settings/ClusterUpdateSettingsRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/settings/ClusterUpdateSettingsResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/settings/TransportClusterUpdateSettingsAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/shards/ClusterSearchShardsGroup.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/shards/ClusterSearchShardsRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/shards/ClusterSearchShardsResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/shards/TransportClusterSearchShardsAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/shards/routing/weighted/delete/ClusterDeleteWeightedRoutingRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/shards/routing/weighted/delete/TransportDeleteWeightedRoutingAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/shards/routing/weighted/get/ClusterGetWeightedRoutingResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/shards/routing/weighted/get/TransportGetWeightedRoutingAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/shards/routing/weighted/put/ClusterPutWeightedRoutingRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/shards/routing/weighted/put/TransportAddWeightedRoutingAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/clone/CloneSnapshotRequestBuilder.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/clone/TransportCloneSnapshotAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/create/CreateSnapshotRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/create/CreateSnapshotResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/create/TransportCreateSnapshotAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/delete/DeleteSnapshotRequestBuilder.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/delete/TransportDeleteSnapshotAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/get/GetSnapshotsRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/get/GetSnapshotsResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/get/TransportGetSnapshotsAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/restore/RestoreClusterStateListener.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/restore/RestoreSnapshotResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/restore/TransportRestoreSnapshotAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/status/SnapshotIndexShardStatus.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/status/SnapshotStatus.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/status/SnapshotsStatusRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/status/SnapshotsStatusResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/snapshots/status/TransportSnapshotsStatusAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/state/ClusterStateRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/state/ClusterStateResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/state/TransportClusterStateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/stats/AnalysisStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/stats/ClusterStatsResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/storedscripts/GetScriptContextResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/storedscripts/GetScriptLanguageResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/storedscripts/GetStoredScriptResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/storedscripts/PutStoredScriptRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/storedscripts/TransportDeleteStoredScriptAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/storedscripts/TransportGetScriptContextAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/storedscripts/TransportGetScriptLanguageAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/storedscripts/TransportGetStoredScriptAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/storedscripts/TransportPutStoredScriptAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/tasks/PendingClusterTasksResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/cluster/tasks/TransportPendingClusterTasksAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/alias/IndicesAliasesRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/alias/TransportIndicesAliasesAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/alias/get/BaseAliasesRequestBuilder.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/alias/get/GetAliasesRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/alias/get/GetAliasesResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/alias/get/TransportGetAliasesAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/analyze/AnalyzeAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/analyze/TransportAnalyzeAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/cache/clear/ClearIndicesCacheResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/close/CloseIndexResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/close/TransportCloseIndexAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/close/TransportVerifyShardBeforeCloseAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/create/AutoCreateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/create/CreateIndexRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/create/TransportCreateIndexAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/dangling/delete/TransportDeleteDanglingIndexAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/dangling/find/FindDanglingIndexRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/dangling/find/NodeFindDanglingIndexRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/dangling/find/TransportFindDanglingIndexAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/dangling/import_index/TransportImportDanglingIndexAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/dangling/list/ListDanglingIndicesRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/dangling/list/ListDanglingIndicesResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/datastream/CreateDataStreamAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/datastream/DeleteDataStreamAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/datastream/GetDataStreamAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/delete/TransportDeleteIndexAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/exists/indices/IndicesExistsRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/exists/indices/TransportIndicesExistsAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/flush/FlushResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/flush/TransportFlushAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/flush/TransportShardFlushAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/forcemerge/ForceMergeResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/forcemerge/TransportForceMergeAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/get/GetIndexRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/get/GetIndexResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/get/TransportGetIndexAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/mapping/get/GetFieldMappingsIndexRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/mapping/get/GetFieldMappingsRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/mapping/get/GetFieldMappingsResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/mapping/get/GetMappingsResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/mapping/get/TransportGetFieldMappingsAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/mapping/get/TransportGetFieldMappingsIndexAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/mapping/get/TransportGetMappingsAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/mapping/put/PutMappingRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/mapping/put/PutMappingRequestBuilder.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/mapping/put/TransportAutoPutMappingAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/mapping/put/TransportPutMappingAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/open/TransportOpenIndexAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/readonly/AddIndexBlockResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/readonly/TransportAddIndexBlockAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/readonly/TransportVerifyShardIndexBlockAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/recovery/RecoveryRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/recovery/RecoveryResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/recovery/TransportRecoveryAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/refresh/RefreshResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/refresh/TransportRefreshAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/refresh/TransportShardRefreshAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/replication/SegmentReplicationStatsRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/replication/SegmentReplicationStatsResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/replication/TransportSegmentReplicationStatsAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/resolve/ResolveIndexAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/rollover/MaxAgeCondition.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/rollover/RolloverInfo.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/segments/IndicesSegmentResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/segments/IndicesSegmentsRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/segments/PitSegmentsRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/segments/TransportIndicesSegmentsAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/segments/TransportPitSegmentsAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/settings/get/GetSettingsRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/settings/get/TransportGetSettingsAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/settings/put/TransportUpdateSettingsAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/settings/put/UpdateSettingsRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/shards/IndicesShardStoresRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/shards/IndicesShardStoresResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/shards/TransportIndicesShardStoresAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/stats/CommonStatsFlags.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/stats/IndicesStatsResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/stats/TransportIndicesStatsAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/delete/DeleteComponentTemplateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/delete/DeleteComposableIndexTemplateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/delete/DeleteIndexTemplateRequestBuilder.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/delete/TransportDeleteComponentTemplateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/delete/TransportDeleteComposableIndexTemplateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/delete/TransportDeleteIndexTemplateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/get/GetComponentTemplateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/get/GetComposableIndexTemplateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/get/GetIndexTemplatesRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/get/GetIndexTemplatesResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/get/TransportGetComponentTemplateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/get/TransportGetComposableIndexTemplateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/get/TransportGetIndexTemplatesAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/post/SimulateIndexTemplateRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/post/SimulateIndexTemplateResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/post/TransportSimulateIndexTemplateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/post/TransportSimulateTemplateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/put/PutComponentTemplateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/put/PutComposableIndexTemplateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/put/PutIndexTemplateRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/put/PutIndexTemplateRequestBuilder.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/put/TransportPutComponentTemplateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/put/TransportPutComposableIndexTemplateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/template/put/TransportPutIndexTemplateAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/upgrade/get/TransportUpgradeStatusAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/upgrade/get/UpgradeStatusRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/upgrade/post/TransportUpgradeAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/upgrade/post/TransportUpgradeSettingsAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/upgrade/post/UpgradeResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/validate/query/ShardValidateQueryRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/validate/query/TransportValidateQueryAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/validate/query/ValidateQueryRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/admin/indices/validate/query/ValidateQueryResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/bulk/BulkItemResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/bulk/BulkRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/bulk/BulkRequestParser.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/bulk/BulkResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/bulk/MappingUpdatePerformer.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/bulk/Retry.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/bulk/TransportBulkAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/bulk/TransportShardBulkAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/bulk/TransportSingleItemBulkWriteAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/delete/DeleteRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/delete/DeleteResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/explain/ExplainRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/explain/ExplainResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/explain/TransportExplainAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/fieldcaps/FieldCapabilities.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/fieldcaps/FieldCapabilitiesIndexRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/fieldcaps/FieldCapabilitiesRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/fieldcaps/FieldCapabilitiesResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/fieldcaps/TransportFieldCapabilitiesAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/fieldcaps/TransportFieldCapabilitiesIndexAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/get/GetRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/get/GetResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/get/MultiGetRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/get/MultiGetResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/get/TransportGetAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/get/TransportMultiGetAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/get/TransportShardMultiGetAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/index/IndexResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/ingest/DeletePipelineTransportAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/ingest/GetPipelineRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/ingest/GetPipelineResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/ingest/GetPipelineTransportAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/ingest/IngestActionForwarder.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/ingest/PutPipelineTransportAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/ingest/SimulateExecutionService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/ingest/SimulatePipelineRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/ingest/SimulatePipelineResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/ingest/SimulatePipelineTransportAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/ingest/SimulateProcessorResult.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/main/MainResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/main/TransportMainAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/resync/TransportResyncReplicationAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/AbstractSearchAsyncAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/CanMatchPreFilterSearchPhase.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/ClearScrollController.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/ClearScrollResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/CreatePitController.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/CreatePitRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/CreatePitResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/DeletePitInfo.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/DeletePitResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/DeleteSearchPipelineTransportAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/ExpandSearchPhase.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/GetSearchPipelineRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/GetSearchPipelineResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/GetSearchPipelineTransportAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/MultiSearchRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/MultiSearchResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/PitService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/PutSearchPipelineRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/common/src/main/java/org/opensearch/common/Explicit.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/common/src/main/java/org/opensearch/common/lease/Releasable.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/core/action/ActionResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/core/common/io/stream/Writeable.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/core/common/util/ByteArray.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "libs/core/src/main/java/org/opensearch/core/xcontent/ObjectParser.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/internalClusterTest/java/org/opensearch/remotestore/RemoteStoreBackpressureAndResiliencyIT.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/AliasesRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/OriginalIndices.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/ParsedScrollId.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/SearchContextIdForNode.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/SearchPhase.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/SearchPhaseContext.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/SearchRequestOperationsListener.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/SearchShardIterator.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/SearchShardTask.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/search/ShardSearchFailure.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/support/ActiveShardCount.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/support/RetryableAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/support/replication/PendingReplicationActions.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/support/replication/ReplicationMode.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/action/support/replication/ReplicationResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/ClusterState.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/ClusterStateApplier.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/ClusterStateListener.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/ClusterStateTaskConfig.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/ClusterStateTaskExecutor.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/ClusterStateTaskListener.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/ClusterStateUpdateTask.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/LocalNodeClusterManagerListener.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/LocalNodeMasterListener.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/NamedDiff.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/RestoreInProgress.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/SnapshotsInProgress.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/TimeoutClusterStateListener.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/ack/ClusterStateUpdateResponse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/block/ClusterBlockException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/block/ClusterBlocks.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/block/IndexCreateBlockException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/coordination/ClusterStatePublisher.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/coordination/CoordinationMetadata.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/coordination/PersistedStateStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/decommission/DecommissionAttributeMetadata.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/metadata/ComponentTemplate.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/metadata/ComposableIndexTemplate.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/metadata/DiffableStringMap.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/metadata/IndexAbstraction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/metadata/IndexGraveyard.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/metadata/IndexMetadata.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/metadata/Metadata.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/metadata/Template.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/metadata/WeightedRoutingMetadata.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/node/DiscoveryNodeFilters.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/AllocationId.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/GroupShardsIterator.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/IndexRoutingTable.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/IndexShardRoutingTable.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/OperationRouting.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/RecoverySource.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/RerouteService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/RoutingChangesObserver.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/RoutingNode.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/RoutingNodes.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/ShardIterator.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/ShardMovementStrategy.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/ShardRouting.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/ShardsIterator.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/allocation/AllocateUnassignedDecision.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/allocation/AllocationDecision.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/allocation/MoveDecision.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/allocation/RoutingAllocation.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/allocation/ShardAllocationDecision.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/allocation/command/AllocationCommand.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/allocation/command/AllocationCommands.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/allocation/decider/AllocationDecider.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/allocation/decider/AllocationDeciders.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/service/ClusterApplier.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/service/ClusterManagerService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/service/ClusterManagerThrottlingStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/service/ClusterStateStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/Rounding.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/cache/CacheLoader.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/compress/CompressedXContent.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/concurrent/GatedCloseable.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/io/stream/DelayableWriteable.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/lucene/index/OpenSearchDirectoryReader.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/lucene/search/TopDocsAndMaxScore.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/lucene/uid/VersionsAndSeqNoResolver.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/time/DateFormatter.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/time/DateMathParser.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/util/CancellableThreads.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/util/Countable.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/util/DoubleArray.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/util/FloatArray.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/util/IntArray.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/util/LongArray.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/util/ObjectArray.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/util/concurrent/AsyncIOProcessor.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/util/concurrent/AtomicArray.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/util/concurrent/ThreadContext.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/common/util/concurrent/ThreadContextStatePropagator.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/gateway/WriteStateException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/IndexWarmer.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/IndexingPressureService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/analysis/AnalysisRegistry.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/analysis/AnalyzerProvider.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/analysis/CharFilterFactory.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/analysis/IndexAnalyzers.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/analysis/TokenFilterFactory.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/analysis/TokenizerFactory.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/cache/IndexCache.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/cache/bitset/BitsetFilterCache.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/cache/bitset/ShardBitsetFilterCache.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/cache/query/QueryCache.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/cache/request/ShardRequestCache.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/engine/EngineException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/engine/EngineFactory.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/engine/SafeCommitInfo.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/DocValueBits.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/IndexFieldDataCache.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/LeafFieldData.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/NumericDoubleValues.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/ShardFieldData.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/fielddata/SortedNumericDoubleValues.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/get/ShardGetService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/ContentPath.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/DocValueFetcher.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/DocumentMapper.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/DocumentMapperForType.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/DocumentMapperParser.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/DynamicTemplate.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/FieldMapper.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/FieldTypeLookup.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/IndexFieldMapper.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/MappedFieldType.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/Mapper.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/MapperParsingException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/MapperService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/Mapping.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/MappingLookup.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/MetadataFieldMapper.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/ObjectMapper.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/ParametrizedFieldMapper.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/ParseContext.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/ParsedDocument.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/RootObjectMapper.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/RoutingFieldMapper.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/SeqNoFieldMapper.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/SourceFieldMapper.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/SourceToParse.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/TextSearchInfo.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/mapper/ValueFetcher.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/query/InnerHitBuilder.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/query/ParsedQuery.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/query/QueryShardContext.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/query/Rewriteable.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/query/support/NestedScope.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/remote/RemoteStoreStatsTrackerFactory.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/seqno/ReplicationTracker.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/seqno/RetentionLeaseSyncer.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/seqno/SequenceNumbers.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/shard/GlobalCheckpointListeners.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/shard/IllegalIndexShardStateException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/shard/IndexEventListener.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/shard/IndexShardClosedException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/shard/IndexShardNotRecoveringException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/shard/IndexShardNotStartedException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/shard/IndexShardRecoveringException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/shard/IndexShardRelocatedException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/shard/IndexShardStartedException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/shard/IndexShardState.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/shard/IndexingOperationListener.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/shard/ReplicationGroup.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/shard/SearchOperationListener.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/shard/ShardPath.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/similarity/SimilarityProvider.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/similarity/SimilarityService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/snapshots/IndexShardSnapshotStatus.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/snapshots/blobstore/RemoteStoreShardShallowCopySnapshot.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/stats/ShardIndexingPressureStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/RemoteSegmentStoreDirectory.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/RemoteStoreFileDownloader.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/Store.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/StoreFileMetadata.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/lockmanager/LockInfo.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/lockmanager/RemoteStoreLockManager.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/lockmanager/RemoteStoreLockManagerFactory.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/lockmanager/RemoteStoreMetadataLockManager.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/metadata/RemoteSegmentMetadata.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/translog/BaseTranslogReader.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/translog/BufferedChecksumStreamOutput.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/translog/ChannelFactory.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/translog/Checkpoint.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/translog/TragicExceptionHolder.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/translog/Translog.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/translog/TranslogDeletionPolicy.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/translog/TranslogDeletionPolicyFactory.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/translog/TranslogException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/translog/TranslogFactory.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/translog/TranslogManager.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/translog/TranslogReader.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/translog/TranslogRecoveryRunner.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/warmer/ShardIndexWarmerService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/NodeIndicesStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/mapper/MapperRegistry.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/recovery/RecoveryListener.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/recovery/RecoveryTarget.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/recovery/StartRecoveryRequest.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/replication/checkpoint/PublishCheckpointAction.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/replication/checkpoint/ReplicationCheckpoint.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/replication/checkpoint/SegmentReplicationCheckpointPublisher.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/replication/common/ReplicationFailedException.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/indices/replication/common/ReplicationState.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/node/AdaptiveSelectionStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/node/ResponseCollectorService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/plugins/IndexStorePlugin.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/repositories/IndexId.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/repositories/IndexMetaDataGenerations.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/repositories/RepositoryData.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/repositories/RepositoryInfo.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/repositories/RepositoryShardId.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/repositories/RepositoryStats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/repositories/RepositoryStatsSnapshot.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/repositories/ShardGenerations.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/script/AggregationScript.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/script/FieldScript.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/DocValueFormat.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/MultiValueMode.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/RescoreDocIds.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/SearchHit.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/SearchHits.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/SearchPhaseResult.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/SearchShardTarget.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/SearchSortValues.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/SearchSortValuesAndFormats.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/Aggregation.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/AggregationBuilder.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/AggregationProcessor.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/Aggregations.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/Aggregator.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/AggregatorFactories.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/AggregatorFactory.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/BucketCollectorProcessor.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/CardinalityUpperBound.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/InternalAggregation.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/InternalAggregations.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/PipelineAggregationBuilder.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/SearchContextAggregations.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/bucket/LocalBucketCountThresholds.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/bucket/terms/TermsAggregator.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/pipeline/PipelineAggregator.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/support/AggregationInfo.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/support/AggregationPath.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/support/AggregationUsageService.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/support/FieldContext.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/support/ValueType.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/support/ValuesSource.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/search/aggregations/support/ValuesSourceConfig.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/cluster/routing/RoutingPool.java": {
+    "downstream_files": [],
+    "commits": []
+  },
+  "server/src/main/java/org/opensearch/index/store/remote/filecache/FileCacheSettings.java": {
+    "downstream_files": [],
+    "commits": []
+  }
+}

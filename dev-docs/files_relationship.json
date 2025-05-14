@@ -211,16 +211,40 @@
     "commits": []
   },
   "server/src/test/java/org/opensearch/index/store/remote/filecache/FileCacheTests.java": {
-    "downstream_files": [],
-    "commits": []
+    "downstream_files": [
+      "server/src/test/java/org/opensearch/index/store/remote/filecache/FileCacheTests.java"
+    ],
+    "commits": [
+      "0ca51a774211184835c4825dfeff38b23198352e",
+      "770bb56a9afff4869e989cc19c4cf341798467cf",
+      "7da292ba2a75fd394dc782b5ee66c0b560cac9db",
+      "16535b92e1d50f5a0cdef1092ad738a6bf53933f",
+      "d139ebccbb66b445ac18b4e0c66ca47ef54e60e8",
+      "06128a904964ce43813ebc8164417a5633d414a2",
+      "ed6141fa2f4e109127c441054c60eafecf1c8c82",
+      "4991a0af90392647390bc573fe6143fbe26a7d41",
+      "a9b4c4502275b517739fdeb1829f0dcde506eab5",
+      "a1e42b1131d5d807dc66d13dd960ebe707da3f09",
+      "3947cb48faf1522fb0e90d234bc228161be11714",
+      "639d28ad46927f8fbb6c940bc7efd4e935528526",
+      "9ce008dc9996a6527ae0abce158908ee2e6241cd",
+      "60089555f7c4f61e6e26d04c55813e453a9935a3"
+    ]
   },
   "server/src/test/java/org/opensearch/index/store/remote/utils/cache/RefCountedCacheTests.java": {
     "downstream_files": [],
     "commits": []
   },
   "server/src/test/java/org/opensearch/index/store/remote/utils/cache/RefCountedCacheTestCase.java": {
-    "downstream_files": [],
-    "commits": []
+    "downstream_files": [
+      "server/src/test/java/org/opensearch/index/store/remote/utils/cache/RefCountedCacheTestCase.java"
+    ],
+    "commits": [
+      "d139ebccbb66b445ac18b4e0c66ca47ef54e60e8",
+      "a1e42b1131d5d807dc66d13dd960ebe707da3f09",
+      "b8c78196438897132f6819460ebb7d4222b39297",
+      "60089555f7c4f61e6e26d04c55813e453a9935a3"
+    ]
   },
   "server/src/main/java/org/opensearch/index/store/remote/file/OnDemandBlockSnapshotIndexInput.java": {
     "downstream_files": [],
